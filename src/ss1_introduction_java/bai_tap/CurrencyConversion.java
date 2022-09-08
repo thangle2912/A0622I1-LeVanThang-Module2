@@ -7,7 +7,7 @@ public class CurrencyConversion {
         System.out.println("Input Dolar : ");
         Scanner scanner = new Scanner(System.in);
         float dolar = scanner.nextFloat();
-        final float rate = 23000;
+        float rate = 23000;
         float vnd = rate * dolar;
         System.out.println("Dolar to VND : "+dolar+"$ = "+vnd+" đ");
     }
