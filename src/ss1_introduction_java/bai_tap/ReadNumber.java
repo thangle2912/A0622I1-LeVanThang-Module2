@@ -27,26 +27,16 @@ public class ReadNumber {
                         } else if (dozens < 10 && units != 0) {
                             String strNumber = getUnit(hundred) + " hundred " + getUnit(units);
                             System.out.println(strNumber);
-                        }else {
-                            if (dozens >10 && units==0){
-                                String strNumber = getUnit(hundred) + " hundred " + getDozen(dozens,units);
+                        } else {
+                            if (dozens > 10 && units == 0) {
+                                String strNumber = getUnit(hundred) + " hundred " + getDozen(dozens, units);
 
                                 System.out.println(strNumber);
-                            }else {
+                            } else {
                                 String strNumber = getUnit(hundred) + " hundred " + getDozen(dozens, units);
                                 System.out.println(strNumber);
                             }
                         }
-
-//                            {
-//                            if (dozens < 10 && units != 0) {
-//                                String strNumber = getUnit(hundred) + " hundred " + getUnit(units);
-//                                System.out.println(strNumber);
-//                            } else {
-//                                String strNumber = getUnit(hundred) + " hundred " + getDozen(dozens, units);
-//                                System.out.println(strNumber);
-//                            }
-//                        }
                     }
                 }
             }
@@ -141,7 +131,7 @@ public class ReadNumber {
                 }
             }
         }
-        if (getUnit(unit)=="Zero"){
+        if (getUnit(unit) == "Zero") {
             return mess;
         }
         return mess + " " + getUnit(unit);
