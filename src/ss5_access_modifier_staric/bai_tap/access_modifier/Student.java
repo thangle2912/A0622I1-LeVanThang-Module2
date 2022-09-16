@@ -1,4 +1,4 @@
-package src.ss5_access_modifier_staric.bai_tap;
+package src.ss5_access_modifier_staric.bai_tap.access_modifier;
 
 public class Student {
     private String name = "John";
@@ -14,8 +14,8 @@ public class Student {
     public void setClasses(String classes) {
         this.classes = classes;
     }
-
-    public static void main(String[] args) {
-
+    public String toString(){
+        String mess= this.name+" : "+this.classes;
+        return mess;
     }
 }
