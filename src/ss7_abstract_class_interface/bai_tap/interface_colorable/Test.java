@@ -15,9 +15,10 @@ public class Test {
 
         for (Shape object : objects) {
             System.out.println(object.getName());
-            object.howToColor();
-            System.out.println(object.getArea());
-
+            if (object.getName().equals("Square")) {
+                object.howToColor();
+            }
+            System.out.println("Area : "+ object.getArea());
         }
     }
 }
